@@ -1,0 +1,179 @@
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Survey Form</h1>
+      <p id="description" class="description text-center">
+        Thanks for helping you understand better.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Full Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="your name here"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="your Email here"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="your Age here"
+        />
+      </div>
+      <div class="form-group">
+        <p>What is your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select your current role</option>
+          <option value="student">Studying</option>
+          <option value="job">Working Full Time</option>
+          <option value="learner">Learning Full Time</option>
+          <option value="preferNo">I decide not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Would you recommend this survey to a friend?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes, Sure</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No, I will not recommend</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What is your favorite hobby?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select your hobby</option>
+          <option value="challenges">Learning New Skills</option>
+          <option value="projects">Building Projects</option>
+          <option value="community">Helping Community</option>
+          <option value="openSource">Creating Softwares</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What would you like improve in your life?
+          <span class="clue">(Check as many as you like)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="social-status"
+            type="checkbox"
+            class="input-checkbox"
+          />Social Status</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="make-friends"
+            type="checkbox"
+            class="input-checkbox"
+          />Make more friends</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="go-trips"
+            type="checkbox"
+            class="input-checkbox"
+          />Go on vacations & trips</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="take-challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />Take more challenges</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="eat-healthy"
+            type="checkbox"
+            class="input-checkbox"
+          />Eat Healthy</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="work-out"
+            type="checkbox"
+            class="input-checkbox"
+          />Workout more often</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="better-sleep"
+            type="checkbox"
+            class="input-checkbox"
+          />Better Sleep</label
+        >
+      <div class="form-group">
+        <p>Want to add more info about yourself ?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your info here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  
