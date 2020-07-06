@@ -14,8 +14,9 @@
         font-size: 2.5rem;
         line-height: 1.5em;
     }
+
     p { 
-    font-family: 'Slabo 27px', serif;
+    font-family: 'Slabo 27px', sans-serif;
       font-size: 1.5em;
       padding-top: 2em;
       margin: 40px;
